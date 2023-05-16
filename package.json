@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/filipvrba/rjs-tool/issues"
   },
-  "homepage": "https://github.com/filipvrba/rjs-tool#readme"
+  "homepage": "https://github.com/filipvrba/rjs-tool#readme",
+  "dependencies": {
+    "commander": "^10.0.1"
+  }
 }
