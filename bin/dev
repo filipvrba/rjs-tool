@@ -1,0 +1,14 @@
+#!/bin/bash
+function sigusr() {
+    npm run dev
+}
+trap sigusr USR1
+
+~/Documents/code/ruby-js/bin/rjsv --pid $$ -c -w -s lib/rjs -o lib/js &
+
+trap 'kill $!; exit 0' INT
+
+while true
+do
+    sleep 0.5
+done
